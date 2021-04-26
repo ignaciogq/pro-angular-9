@@ -26,10 +26,10 @@
             <td>{{ i + 1 }}</td>
             <td>{{ item.task }}</td>
             <td><input type="checkbox" [(ngModel)]="item.complete" /></td>
-            <!-- <td [ngSwitch]="item.complete">
+            <td [ngSwitch]="item.complete">
                 <span *ngSwitchCase="true">Yes</span>
                 <span *ngSwitchDefault>No</span>
-            </td> -->
+            </td>
         </tr>
     </tbody>
   </table>
